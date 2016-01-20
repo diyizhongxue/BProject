@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AlbumsCell">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="265"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="265"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7O9-gQ-JUa">
+                        <rect key="frame" x="0.0" y="0.0" width="318" height="199"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLW-qY-iAt">
+                        <rect key="frame" x="0.0" y="199" width="318" height="66"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="btG-0Z-7Ze"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="btG-0Z-7Ze"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="7O9-gQ-JUa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3b3-d0-dWI"/>
+                <constraint firstAttribute="trailing" secondItem="xLW-qY-iAt" secondAttribute="trailing" id="Kl7-Ip-IkI"/>
+                <constraint firstAttribute="bottom" secondItem="xLW-qY-iAt" secondAttribute="bottom" id="O21-Mf-ho2"/>
+                <constraint firstItem="xLW-qY-iAt" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1/4" id="W7R-EA-DDE"/>
+                <constraint firstItem="7O9-gQ-JUa" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="3/4" id="bfl-uv-nmA"/>
+                <constraint firstAttribute="trailing" secondItem="7O9-gQ-JUa" secondAttribute="trailing" id="fRz-Fw-yUu"/>
+                <constraint firstItem="7O9-gQ-JUa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fmt-dd-35z"/>
+                <constraint firstItem="xLW-qY-iAt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="x4n-eq-sg7"/>
+            </constraints>
+            <size key="customSize" width="318" height="265"/>
+            <connections>
+                <outlet property="label" destination="xLW-qY-iAt" id="cUz-OR-oSD"/>
+                <outlet property="photoView" destination="7O9-gQ-JUa" id="rU9-Sh-vza"/>
+            </connections>
+            <point key="canvasLocation" x="612" y="358.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

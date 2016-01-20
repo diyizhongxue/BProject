@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="HistoryModel" representedClassName="HistoryModel" syncable="YES">
+        <attribute name="des" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="myID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HistoryModel" positionX="-63" positionY="207" width="189" height="105"/>
+    </elements>
+</model>

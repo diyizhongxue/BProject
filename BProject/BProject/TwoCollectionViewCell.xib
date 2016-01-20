@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TwoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="276"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="276"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BBf-Vt-LRF">
+                        <rect key="frame" x="0.0" y="0.0" width="323" height="193"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNm-ZG-nhe">
+                        <rect key="frame" x="0.0" y="193" width="323" height="83"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USO-6z-b4o">
+                        <rect key="frame" x="0.0" y="173" width="323" height="20"/>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="umZ-R1-pUe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="RNm-ZG-nhe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3YQ-IM-3OR"/>
+                <constraint firstItem="USO-6z-b4o" firstAttribute="width" secondItem="BBf-Vt-LRF" secondAttribute="width" id="Dx4-GR-5YN"/>
+                <constraint firstItem="RNm-ZG-nhe" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.3" id="EkH-xF-HaP"/>
+                <constraint firstAttribute="bottom" secondItem="RNm-ZG-nhe" secondAttribute="bottom" id="Gdp-pz-Zgz"/>
+                <constraint firstItem="USO-6z-b4o" firstAttribute="leading" secondItem="BBf-Vt-LRF" secondAttribute="trailing" constant="-315" id="Jsm-F5-Rzo"/>
+                <constraint firstItem="USO-6z-b4o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Jvn-Ks-roX"/>
+                <constraint firstItem="BBf-Vt-LRF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LZ1-mB-7cs"/>
+                <constraint firstItem="USO-6z-b4o" firstAttribute="centerX" secondItem="BBf-Vt-LRF" secondAttribute="centerX" id="OCW-D0-WrD"/>
+                <constraint firstItem="BBf-Vt-LRF" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.7" id="SUC-tv-CTl"/>
+                <constraint firstItem="BBf-Vt-LRF" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="TIr-Np-LoF"/>
+                <constraint firstItem="BBf-Vt-LRF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dvK-EZ-wiZ"/>
+                <constraint firstItem="USO-6z-b4o" firstAttribute="bottom" secondItem="BBf-Vt-LRF" secondAttribute="bottom" id="hPS-4b-U2E"/>
+                <constraint firstItem="RNm-ZG-nhe" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="lds-Ac-oPJ"/>
+                <constraint firstItem="RNm-ZG-nhe" firstAttribute="width" secondItem="BBf-Vt-LRF" secondAttribute="width" id="uzo-Ao-EHh"/>
+                <constraint firstItem="USO-6z-b4o" firstAttribute="centerY" secondItem="BBf-Vt-LRF" secondAttribute="centerY" id="xUY-9b-a9l"/>
+            </constraints>
+            <size key="customSize" width="323" height="276"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Dx4-GR-5YN"/>
+                    <exclude reference="Jsm-F5-Rzo"/>
+                    <exclude reference="xUY-9b-a9l"/>
+                    <exclude reference="uzo-Ao-EHh"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="BBf-Vt-LRF" id="AUU-0L-2cu"/>
+                <outlet property="smallLabel" destination="USO-6z-b4o" id="ocN-uy-h77"/>
+                <outlet property="titleLabel" destination="RNm-ZG-nhe" id="7Ms-ZN-JSk"/>
+            </connections>
+            <point key="canvasLocation" x="418.5" y="501"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChangnelBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="241"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="241"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JQy-If-bCk">
+                        <rect key="frame" x="26" y="5" width="145" height="145"/>
+                        <color key="backgroundColor" red="0.81508336189745179" green="0.83893089144138944" blue="0.86588772123893809" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JQy-If-bCk" secondAttribute="height" multiplier="1:1" id="CzO-sW-sUf"/>
+                            <constraint firstAttribute="width" secondItem="JQy-If-bCk" secondAttribute="height" multiplier="1:1" id="mNn-r2-U0I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CzO-sW-sUf"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJb-i6-FCM">
+                        <rect key="frame" x="0.0" y="150" width="196" height="91"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="JQy-If-bCk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4A4-pe-MEZ"/>
+                <constraint firstAttribute="trailing" secondItem="lJb-i6-FCM" secondAttribute="trailing" id="7se-F5-pD5"/>
+                <constraint firstItem="JQy-If-bCk" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="O0O-3W-sfX"/>
+                <constraint firstItem="lJb-i6-FCM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RPW-sc-l1R"/>
+                <constraint firstAttribute="trailing" secondItem="JQy-If-bCk" secondAttribute="trailing" id="TW0-6p-ZF1"/>
+                <constraint firstItem="lJb-i6-FCM" firstAttribute="top" secondItem="JQy-If-bCk" secondAttribute="bottom" id="dGf-L1-4D8"/>
+                <constraint firstItem="JQy-If-bCk" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="3/5" id="dXi-VK-Uyz"/>
+                <constraint firstItem="JQy-If-bCk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="eNP-5y-JuI"/>
+                <constraint firstAttribute="bottom" secondItem="lJb-i6-FCM" secondAttribute="bottom" id="wcm-rC-3U1"/>
+            </constraints>
+            <size key="customSize" width="196" height="241"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4A4-pe-MEZ"/>
+                    <exclude reference="TW0-6p-ZF1"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="label" destination="lJb-i6-FCM" id="ehk-HL-YJb"/>
+                <outlet property="photoView" destination="JQy-If-bCk" id="gpW-tA-ePf"/>
+            </connections>
+            <point key="canvasLocation" x="390" y="437.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
